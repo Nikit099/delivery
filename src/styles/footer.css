@@ -1,0 +1,62 @@
+.footer{
+    width: 1440px;
+height: 112px;
+background: #E5EEF8;
+box-shadow: -7px -7px 18px 0px #FDFDFD;
+border-radius: 20px 20px 0px 0px;
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.tree{
+    position: absolute;
+    top: -164px;
+    left: 1300px;
+}
+.titleFoot{
+    color: #344564;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.contentFoot{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 23px;
+}
+.iconsFoot{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+.iconsFoot svg, .iconsFoot p{
+    cursor: pointer;
+}
+.iconsFoot div:hover path{
+    fill: #F4942A;
+    transition-duration: 100ms;
+    transition-timing-function: ease-in-out;
+}
+.botTg:hover p{
+    color: #344564;
+    transition-duration: 100ms;
+    transition-timing-function: ease-in-out;
+}
+.botTg{
+    display: flex;
+    color: #F4942A;
+font-size: 12px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+position: relative;
+
+}
+.botTg p{
+    position: absolute;
+    left: -15px;
+    top: 5px;
+}

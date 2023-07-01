@@ -1,0 +1,109 @@
+.ourHelp{
+    display: flex;
+}
+.leftService{
+    position: relative;
+    left: 0;
+}
+.titleService{
+   margin-bottom: 47px; 
+}
+
+.leftElemService{
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+.cutOutElem{
+    padding: 16px 0 0 14px;
+    box-sizing: border-box;
+    height: 115px;
+    border-radius: 19px;
+    background: #E5EDF6;
+    box-shadow: 7px 7px 18px 0px #CFD7E3 inset, -7px -7px 18px 0px #FDFDFD inset;
+}
+.elemCut1{
+    width: 488px;  
+}
+.elemCut2{
+    width: 584px;
+}
+.elemCut3{
+    width: 725px;
+    padding-right: 123px;
+}
+.rightService{
+    position: relative;
+
+}
+.road{
+    margin-top: -90px;
+    position: absolute;
+
+}
+.sky{
+    position: absolute;
+    left: -100px;
+}
+.titleService{
+    color: #344564;
+    font-size: 20px;
+    font-weight: 600;
+}
+.sun{
+    border-radius: 143px;
+    background: #E5EDF6;
+    width: 203px;
+    height: 203px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: 150px;
+    top: 95px;
+
+}
+.sun .countPay{
+    color: #F59327;
+font-size: 48px;
+font-weight: 800;
+}
+.sun .titleCountPay{
+    color: #344564;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 800;
+}
+.bigPayBtn{
+    z-index: 2;
+    cursor: pointer;
+    width: 112px;
+    height: 58px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 1039px;
+    top: 400px;
+    background: linear-gradient(134deg, #F2B067 0.01%, #F59326 100%);
+}
+.bigPayBtn:hover{
+    background: linear-gradient(134deg, #ffad4f 0.01%, #ff9a26 100%);
+
+
+}
+.bigPayBtn:active{
+    transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+    -moz-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    -o-transform: scale(0.95);
+
+}
+.trees{
+    position: absolute;
+    left: 570px;
+    top: 355px;
+}

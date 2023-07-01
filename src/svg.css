@@ -1,0 +1,97 @@
+
+.emotion:hover path {
+    fill: #F59326;
+    transition: 0.2s ;
+    -webkit-transition: 0.2s ;
+    -moz-transition: 0.2s ;
+    -ms-transition: 0.2s ;
+    -o-transition: 0.2s ;
+}
+.emotion:not(:hover) path{
+    transition: 0.2s ;
+    -webkit-transition: 0.2s ;
+    -moz-transition: 0.2s ;
+    -ms-transition: 0.2s ;
+    -o-transition: 0.2s ;
+}
+.emotion:active path{
+    transform: scale(0.96, 0.96);
+    -webkit-transform: scale(0.96, 0.96);
+    -moz-transform: scale(0.96, 0.96);
+    -ms-transform: scale(0.96, 0.96);
+    -o-transform: scale(0.96, 0.96);
+}
+.emotion2 path{
+    fill: #F59326;
+    transform: scale(0.96, 0.96);
+    -webkit-transform: scale(0.96, 0.96);
+    -moz-transform: scale(0.96, 0.96);
+    -ms-transform: scale(0.96, 0.96);
+    -o-transform: scale(0.96, 0.96);
+}
+.arrow:hover path{
+    transition: 0.1s ;
+    fill-opacity: 1;
+    -webkit-transition: 0.1s ;
+    -moz-transition: 0.1s ;
+    -ms-transition: 0.1s ;
+    -o-transition: 0.1s ;
+}
+.arrow:not(:hover)  path{
+    transition: 2.2s ;
+    -webkit-transition: 2.2s ;
+    -moz-transition: 2.2s ;
+    -ms-transition: 2.2s ;
+    -o-transition: 2.2s ;
+}
+.around{
+    transition: 0.1s ;
+    -webkit-transition: 0.1s ;
+    -moz-transition: 0.1s ;
+    -ms-transition: 0.1s ;
+    -o-transition: 0.1s ;
+}
+.around:not(:hover){
+    transition: 2s ;
+    -webkit-transition: 2s ;
+    -moz-transition: 2s ;
+    -ms-transition: 2s ;
+    -o-transition: 2s ;
+}
+.around:hover {
+    background:#F59326;
+    box-shadow: 0px 4px 20px #F59326;
+}
+.around:hover path{
+    fill: #9E5726;
+    transition: 0.1s ;
+    -webkit-transition: 0.1s ;
+    -moz-transition: 0.1s ;
+    -ms-transition: 0.1s ;
+    -o-transition: 0.1s ;
+}
+.around:not(:hover) path{
+    transition: 2s ;
+    -webkit-transition: 2s ;
+    -moz-transition: 2s ;
+    -ms-transition: 2s ;
+    -o-transition: 2s ;
+}
+.calculature{
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+.calculature:active{
+    width: 61px;
+    height: 59px;
+    background: #E5EDF6;
+  box-shadow: inset -3px -3px 8px #FDFDFD, inset 3px 3px 8px #CFD7E3;
+  border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}

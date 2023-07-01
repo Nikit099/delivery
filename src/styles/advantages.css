@@ -1,0 +1,135 @@
+.fatherAdvant{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.blockAdvant{
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    top: 0;
+    width: 1349px;
+    height: 519px;
+}
+.blockAdvantFon{
+    width: 1349px;
+    padding-left: 36px;
+    height: 519px;
+    background: linear-gradient(135deg, #E8F0F9 0%, #E3EDF8 100%);
+    box-shadow: -7px -7px 18px 0px #FDFDFD, 7px 7px 18px 0px #CFD7E3;
+    filter: blur(4.5px);
+    -webkit-filter: blur(4.5px);
+}
+.aroundsAdvant{
+    position: relative;
+
+}
+.aroundAdvant:hover{
+    filter: drop-shadow(0px 0px 25px #F59326);
+    -webkit-filter: drop-shadow(0px 0px 25px #F59326);
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+}
+.aroundAdvant:not(:hover) {
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+}
+.aroundAdvant:hover path{
+    fill: #F59326;
+    transition-duration: 400ms;
+    transition-timing-function: ease-in-out;
+}
+.aroundAdvant:not(:hover) path{
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+}
+
+
+.titleAdvant{
+    color: #344564;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.aroundAdvant{
+    border-radius: 148px;
+    background: #F1F7FD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.around1{
+    width: 249px;
+    height: 249px;
+    position: absolute;
+    left: 51px;
+    top: 104px;
+}
+.around2{
+    width: 129px;
+    height: 129px;
+    position: absolute;
+    left: 345px;
+    top: 278px;
+}
+.around3{
+    width: 129px;
+    height: 129px;
+    position: absolute;
+    left: 469px;
+    top: 137px;
+}
+.aroundPay{
+    width: 95px;
+    height: 93px;
+    position: absolute;
+    left: 568px;
+    top: 342px;
+    cursor: pointer;
+}
+.aroundPay:hover{
+    background:  #F59326 ;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+}
+.aroundPay:hover path{
+    fill: #9E5726;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+}
+.rightAdvant{
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    margin-top: 32px;
+}
+.titleAdvant{
+    margin: 32px 0 0 35px ;
+    position: absolute;
+}
+.textAdvant{
+width: 565px;
+height: 129px;
+border-radius: 36px;
+background: #DDE8F4;
+padding: 15px 30px;
+box-sizing: border-box;
+display: flex;
+flex-direction: column;
+gap: 11px;
+}
+.titleAdText{
+    color: #344564;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.descAd{
+    color: #344564;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
