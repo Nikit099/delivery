@@ -1,6 +1,21 @@
-import React from "react"
+import React, { useState } from "react"
 import "../styles/advantages.css"
+import TextAdvant from "../UI/textAdvant"
 const Advantages = ({ setBelmo, belmo }) => {
+  const [advant, setAdvant] = useState([
+    {
+      title: "Быстрая обработка посылок",
+      body: "Посылка обрабатывается на наших складах в течении 24 часов после поступления на склад.",
+    },
+    {
+      title: "Самая низкая комиссия на выкуп товара",
+      body: "Оплачиваем товар в течении 1 часа с момента подачи вами заявки! Комиссия на выкуп товара от 5% от стоимости товара!",
+    },
+    {
+      title: "Партнерство",
+      body: "Мы сотрудничаем с самыми крупными логистическими компаниями - это позволяет доставлять товары в РФ практически из любой точки мира, а также предложить вам лучшие условия доставки!",
+    },
+  ])
   return (
     <div className="fatherAdvant">
       <div className="blockAdvantFon"></div>
@@ -270,30 +285,9 @@ const Advantages = ({ setBelmo, belmo }) => {
           </div>
         </div>
         <div className="rightAdvant">
-          <div className="textAdvant textAd1">
-            <div className="titleAdText">Быстрая обработка посылок</div>
-            <div className="descAd">
-              Посылка обрабатывается на наших складах в течении 24 часов после
-              поступления на склад.
-            </div>
-          </div>
-          <div className="textAdvant textAd2">
-            <div className="titleAdText">
-              Самая низкая комиссия на выкуп товара{" "}
-            </div>
-            <div className="descAd">
-              Оплачиваем товар в течении 1 часа с момента подачи вами заявки!
-              Комиссия на выкуп товара от 5% от стоимости товара!
-            </div>
-          </div>
-          <div className="textAdvant textAd3">
-            <div className="titleAdText">Партнерство</div>
-            <div className="descAd">
-              Мы сотрудничаем с самыми крупными логистическими компаниями - это
-              позволяет доставлять товары в РФ практически из любой точки мира,
-              а также предложить вам лучшие условия доставки!
-            </div>
-          </div>
+          {advant.map((elem) => (
+            <TextAdvant {...elem} />
+          ))}
         </div>
       </div>
     </div>

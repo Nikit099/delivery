@@ -1,8 +1,25 @@
-import React from 'react';
-
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
+let data1
+let data2
 const About = ({
     clickEmotion, faces
 }) => {
+  const [invest, setInvest] = useState([])
+  useEffect(()=> {
+   axios.all(
+    [
+      axios.get('https://api.investing.com/api/financialdata/2186/historical/chart/?interval=PT15M&pointscount=60'),
+      axios.get('https://api.investing.com/api/financialdata/1691/historical/chart/?interval=PT15M&pointscount=60')
+    ]
+   ).then(res => {
+    data1 = res[0].data.data
+    data2  = res[1].data.data
+    setInvest([data1[data1.length - 1][1], data2[data2.length - 1][1]])
+    console.log(data1[data1.length - 1][1]);
+   })
+   
+  }, [])
     return (
         <div className="about_us">
         <div className="about_us_body">
@@ -47,10 +64,13 @@ const About = ({
               </div>
             ))}
           </div>
-          <div className="money">
-            <div className="monBlock eur">EUR = 182 Руб</div>
-            <div className="monBlock dol">USD = 172 Руб</div>
-          </div>
+         
+           {
+            invest.length ?  <div className="money"> <div className="monBlock eur">EUR = {invest[1].toString().slice(0,5)} Руб</div>
+            <div className="monBlock dol">USD = {invest[0].toString().slice(0,5)} Руб</div></div>
+            : null 
+          }
+          
         </div>
       </div>
     );

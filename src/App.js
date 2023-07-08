@@ -244,7 +244,7 @@ function App() {
           </div>
           <OurHelp setBelmo={setBelmo} belmo={belmo} />
           <Advantages setBelmo={setBelmo} belmo={belmo} />
-          <HowWork />
+          <HowWork setBelmo={setBelmo} belmo={belmo} />
 
           <Reviews />
           <Footer />
